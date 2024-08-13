@@ -1,0 +1,23 @@
+// Node Js introduction
+
+--> Nodejs is an open source run-time server environment.
+--> Nodejs allows you to run javascript on server.
+
+
+// introduction
+
+--> Nodejs is an open source server environment.
+--> Nodejs is Free.
+--> Nodejs runs on various platforms.
+--> Nodejs uses javascript on server.
+
+*/* Nodejs runs single threaded, non-blocking, asynchronous programming, which is very memory efficient. */*
+
+
+// Get Started 
+
+--> Download Nodejs from its official website.
+
+--> Initiate the Nodejs file,
+        write / node file.js ---> on command line.
+

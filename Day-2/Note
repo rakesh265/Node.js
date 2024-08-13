@@ -1,0 +1,33 @@
+// Day 2 //
+
+// Node.js Modules
+
+--> A module in Node.js is a file or a set of files that contain javaScript code that can be reused across in your application.
+--> Modules help organize code into separate, manageable pieces, each focusing on a specific functionality.
+
+--> Other js files nothing but modules.
+--> which have all different name and different modules.
+
+--> We should include all other modules in a root. we access them using require method
+
+*/  app.js --> require("file.js")
+
+
+
+/// we cannot access functions, methods, variables which are in the other modules, with simple require();
+    by default modules will protect the functions, methods, and variables from leaking.
+
+
+// to use them in other modules we have to export the them.
+
+
+
+
+/// Basically, this require method is default js module (common js module --- cjs) 
+
+// import and export. (es6 modules)
+--> for using import and export we should a package type module.
+--> if the type module present this default cjs does't work, that throws an error.
+
+        we should export the modules functions, variable etc..
+        then import tem in app.js to access.
