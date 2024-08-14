@@ -1,7 +1,6 @@
-console.log("Calling App.js");
+// console.log("Calling App.js");
 
 
-const fileA = require("./Modules/fileA");
 // console.log(module.exports); --> {}
 
 
@@ -25,6 +24,18 @@ const fileA = require("./Modules/fileA");
 
 // If there are n number of modules 
 
-const {fileC} = require("./Modules")
+// const {fileC} = require("./Modules")
 
-fileC()
+// fileC()
+
+
+// Task
+const str = "rakesh"
+
+const {capitalizeFirstLetter, reverseString, countVowels} = require("./Task/stringUtils");
+
+console.log(capitalizeFirstLetter(str));
+console.log(reverseString(str));
+console.log(countVowels(str));
+
+
