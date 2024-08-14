@@ -1,1 +1,1 @@
- console.log("Calling File2");
+export var a = 55;

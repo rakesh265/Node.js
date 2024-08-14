@@ -7,6 +7,11 @@ function file1(){
 var y = 25;
 
 module.exports = {
-    x : file1,
-    y: y
+    x: file1,
+    y: y,
 }
+
+// module.exports = {
+//     file1,
+//     y,
+// }

@@ -1,33 +1,40 @@
-// Day 2 //
+>>>>>>>>>>>>  Day 2  <<<<<<<<<<<<<<
 
-// Node.js Modules
+>>>> Node.js Modules
 
---> A module in Node.js is a file or a set of files that contain javaScript code that can be reused across in your application.
---> Modules help organize code into separate, manageable pieces, each focusing on a specific functionality.
+-> A module in Node.js is a file or a set of files that contain javaScript code that can be reused across in your application.
+-> Modules help organize code into separate, manageable pieces, each focusing on a specific functionality.
 
---> Other js files nothing but modules.
---> which have all different name and different modules.
+-> Other js files nothing but modules.
+-> which have all different name and different modules.
 
---> We should include all other modules in a root. we access them using require method
+-> We should include all other modules in a root. we access them using require method
 
-*/  app.js --> require("file.js")
+ --->>>>   app.js --> require("file.js")
 
 
 
-/// we cannot access functions, methods, variables which are in the other modules, with simple require();
+-->>we cannot access functions, methods, variables which are in the other modules, with simple require();
     by default modules will protect the functions, methods, and variables from leaking.
 
+--> to use them in other modules we have to export the them.
 
-// to use them in other modules we have to export the them.
+->Basically, this require method is default js module (common js module --- cjs) 
 
+->import and export. (es6 modules)
 
-
-
-/// Basically, this require method is default js module (common js module --- cjs) 
-
-// import and export. (es6 modules)
---> for using import and export we should a package type module.
---> if the type module present this default cjs does't work, that throws an error.
+- for using import and export we should a package type module.
+- if the type module present this default cjs does't work, that throws an error.
 
         we should export the modules functions, variable etc..
         then import tem in app.js to access.
+
+>> By default module.exports is an empty object, while exporting the it should be give the key value pair or by only value itself. 
+    and also you can access by destructing values.
+ 
+
+>> If there are n numbers of modules then it will difficult ue them in app.js, due to some difficulty to access. 
+-> For that we make all the modules into one module by keeping all modules in one folder naming it as Modules and in that
+    modules folder we create a index.js folder to maintain all other modules.
+-> This index.js folder contain access to all other modules.
+-> we use this module in the app.js to access the required functions and other variables from the modules.
